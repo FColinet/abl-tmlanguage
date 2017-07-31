@@ -226,6 +226,33 @@
               ]
             }
           }
+        },
+        {
+          "match": "(?i)\\b(buffer)\\b([^\\.]*)(for)\\b([^\\.]*)",
+          "comment": "https://documentation.progress.com/output/ua/OpenEdge_latest/index.html#page/dvref%2Fdefine-buffer-statement.html%23",
+          "name": "meta.define.buffer.abl",
+          "captures": {
+            "1": {
+              "name": "keyword.other.abl"
+            },
+            "2": {
+              "patterns": [
+                {
+                  "include": "#variable-name"
+                }
+              ]
+            },
+            "3": {
+              "name": "keyword.other.abl"
+            },
+            "4": {
+              "patterns": [
+                {
+                  "include": "#variable-name"
+                }
+              ]
+            }
+          }
         }
       ]
     },
